@@ -8,6 +8,19 @@ A collection of Go cli tools for homebrew.
 brew install caspian-x/tools/go-cli-tools
 ```
 
+## Upgrade
+
+If you do not have the latest version you can just run
+```sh
+brew upgrade caspian-x/tools/go-cli-tools
+```
+> you can also run `brew upgrade` to upgrade all packages.
+
+You can check if you have the latest version by checking the releases on the GitHub page and running
+```sh
+brew info caspian-x/tools/go-cli-tools
+```
+
 ## Tools
 
 ### date-screenshots
