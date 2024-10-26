@@ -23,13 +23,19 @@ brew info caspian-x/tools/go-cli-tools
 
 ## Tools
 
-### date-screenshots
-
-Checks screenshot files (`.jpg`, `.jpeg`, `.png`, case insensitive) for a valid exif metadata tag for a date. If there is not a valid date, a date is searched for in the file's last modified time and other metadata tags and added to the `DateTimeOriginal` metadata tag.
-
-#### Usage
+### date-photos
 ```sh
-date-screenshots <directory>
+date-photos <dir>
 ```
+> Flags: --dry-run/-n
 
-> Dry run flag: `-n` or `--dry-run`
+Checks files (`.jpg`, `.jpeg`, `.png`, `.webp`, case insensitive) for a valid exif metadata tag for a date. If there is not a valid date, a date is searched for in the file's last modified time and other metadata tags and added to the `DateTimeOriginal` metadata tag.
+
+### remove-duplicate-photos
+```sh
+remove-duplicate-photos <dir>
+```
+> Flags: --dry-run/-n
+
+Removes original photos/videos/files of ones that were edited on Apple devices. 
+Example: if there are two photos, IMG_E1234.jpg and IMG_1234.jpg, this script will remove IMG_1234.jpg because IMG_E1234.jpg is the "newer", edited version.
