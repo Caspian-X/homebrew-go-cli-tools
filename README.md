@@ -39,3 +39,11 @@ remove-duplicate-photos <dir>
 
 Removes original photos/videos/files of ones that were edited on Apple devices. 
 Example: if there are two photos, IMG_E1234.jpg and IMG_1234.jpg, this script will remove IMG_1234.jpg because IMG_E1234.jpg is the "newer", edited version.
+
+### remove-files
+```sh
+remove-files <dir>
+```
+> Flags: -dry-run/-n, -aae, -heic
+
+Deletes files with extensions based on provided flags recursively from the given directory.
