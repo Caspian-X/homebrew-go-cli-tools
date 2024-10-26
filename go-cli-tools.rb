@@ -5,25 +5,27 @@
 class GoCliTools < Formula
   desc ""
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.1.1/homebrew-tools_Darwin_x86_64.tar.gz"
-      sha256 "065249d3a04b63c92aed393058cbf7645a51de964c166b224335a244f007b3a9"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Darwin_x86_64.tar.gz"
+      sha256 "95e2c2def31ce8610fe93fcebb675154deb3d996ddbb126ca9ef80d133bda12a"
 
       def install
         bin.install "date-photos"
         bin.install "remove-duplicate-photos"
+        bin.install "remove-files"
       end
     end
     on_arm do
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.1.1/homebrew-tools_Darwin_arm64.tar.gz"
-      sha256 "0dbe2b3fdf274f967d1a481298674803686395594538eb002fa13085adf1c488"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Darwin_arm64.tar.gz"
+      sha256 "0eb17387f7962cf6c90db50024d340a1d48aca73743ed31884705c8df20622b2"
 
       def install
         bin.install "date-photos"
         bin.install "remove-duplicate-photos"
+        bin.install "remove-files"
       end
     end
   end
@@ -31,23 +33,25 @@ class GoCliTools < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.1.1/homebrew-tools_Linux_x86_64.tar.gz"
-        sha256 "93afdfec3699bd699c2c15f09ccb1f7ce107e47459f67b3fdf39731cdb3652c7"
+        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Linux_x86_64.tar.gz"
+        sha256 "9f0bb1a306ee50d2e8b59f5eb6e8eb19e8f791dd8c164bb88eebc95103913416"
 
         def install
           bin.install "date-photos"
           bin.install "remove-duplicate-photos"
+          bin.install "remove-files"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.1.1/homebrew-tools_Linux_arm64.tar.gz"
-        sha256 "4f58ae5a1a419b69cc58a895d693479ac600e09d0d23a5d97e255fa84cc37f48"
+        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Linux_arm64.tar.gz"
+        sha256 "9734b2fe1c1548a9e1c9376d7da548e7965d5079433c3c2f4027ec891aace69d"
 
         def install
           bin.install "date-photos"
           bin.install "remove-duplicate-photos"
+          bin.install "remove-files"
         end
       end
     end
