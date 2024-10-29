@@ -5,24 +5,26 @@
 class GoCliTools < Formula
   desc ""
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.2.0"
+  version "1.3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Darwin_x86_64.tar.gz"
-      sha256 "95e2c2def31ce8610fe93fcebb675154deb3d996ddbb126ca9ef80d133bda12a"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.0/homebrew-tools_Darwin_x86_64.tar.gz"
+      sha256 "c1674cbbd9d17cb42d67ab88fca93f5735054795b030c4a32dc4403b955fd034"
 
       def install
+        bin.install "convert-heic-to-jpg"
         bin.install "date-photos"
         bin.install "remove-duplicate-photos"
         bin.install "remove-files"
       end
     end
     on_arm do
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Darwin_arm64.tar.gz"
-      sha256 "0eb17387f7962cf6c90db50024d340a1d48aca73743ed31884705c8df20622b2"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.0/homebrew-tools_Darwin_arm64.tar.gz"
+      sha256 "510432352a6fe52e77cca832db444a343b2b05ed4d894e4bc0d4789ad8536772"
 
       def install
+        bin.install "convert-heic-to-jpg"
         bin.install "date-photos"
         bin.install "remove-duplicate-photos"
         bin.install "remove-files"
@@ -33,10 +35,11 @@ class GoCliTools < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Linux_x86_64.tar.gz"
-        sha256 "9f0bb1a306ee50d2e8b59f5eb6e8eb19e8f791dd8c164bb88eebc95103913416"
+        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.0/homebrew-tools_Linux_x86_64.tar.gz"
+        sha256 "9be708a0b1fe82053fab3c92752e9dce609b82252087485edbb71d6b34d1ed16"
 
         def install
+          bin.install "convert-heic-to-jpg"
           bin.install "date-photos"
           bin.install "remove-duplicate-photos"
           bin.install "remove-files"
@@ -45,10 +48,11 @@ class GoCliTools < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.2.0/homebrew-tools_Linux_arm64.tar.gz"
-        sha256 "9734b2fe1c1548a9e1c9376d7da548e7965d5079433c3c2f4027ec891aace69d"
+        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.0/homebrew-tools_Linux_arm64.tar.gz"
+        sha256 "ed68dfa0ccae846c77696559135401ba30680be4fbb87aee33f87bd1ba27f7ab"
 
         def install
+          bin.install "convert-heic-to-jpg"
           bin.install "date-photos"
           bin.install "remove-duplicate-photos"
           bin.install "remove-files"
