@@ -47,3 +47,11 @@ remove-files <dir>
 > Flags: -dry-run/-n, -aae, -heic
 
 Deletes files with extensions based on provided flags recursively from the given directory.
+
+### convert-heic-to-jpg
+```sh
+convert-heic-to-jpg <dir>
+```
+> Flags: -dry-run/-n
+
+Converts .heic (case-insensitive) images to .jpg
